@@ -138,7 +138,8 @@ const getNextId = state => {
 const getComponentId = (state, prefix: string = 'css') => {
   // Prefix the identifier with css- because CSS classes cannot start with a number
   // Also in snapshots with jest-glamor-react the hash will be replaced with an index
-  return `${prefix}-${getFileHash(state)}${getNextId(state)}`
+  const fileHash = process.env.TEST_ENV ? '' : getFileHash(state)
+  return `${prefix}-${fileHash}${getNextId(state)}`
 }
 
 export function buildStyledCallExpression(identifier, tag, path, state, t) {
