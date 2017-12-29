@@ -1,5 +1,5 @@
 {
-  "name": "babel-plugin-emotion",
+  "name": "@spotim/babel-plugin-emotion",
   "version": "7.3.2",
   "description": "A recommended babel preprocessing plugin for emotion, the The Next Generation of CSS-in-JS.",
   "main": "lib/index.js",

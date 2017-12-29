@@ -1,3 +1,7 @@
+@SPOTIM FORK NOTES - not adding file hash process.env.TEST_ENV is set. This prevents Jest false positive changes.
+Only necessary for v7.3.2 and down
+  
+
 <p align="center" style="color: #343a40">
   <img src="https://cdn.rawgit.com/tkh44/emotion/master/emotion.png" alt="emotion" height="200" width="200">
   <h1 align="center">emotion</h1>
